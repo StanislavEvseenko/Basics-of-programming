@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+<script>
+    var n = 0;
+
+    var a = prompt('200+100=')
+    if (a == 300) {
+        alert('Верно!');
+        n = n + 1;
+    } else {
+        alert('Неверно!');
+    }
+
+    a = prompt('500-200=')
+    if (a == 300) {
+        alert('Верно!');
+        n = n + 1;
+    } else {
+        alert('Неверно!');
+    }
+
+    a = prompt('320-200=')
+    if (a == 120) {
+        alert('Верно!');
+        n = n + 1;
+    } else {
+        alert('Неверно!');
+    }
+
+    alert('Правильных ответов: ' + n);
+</script>
