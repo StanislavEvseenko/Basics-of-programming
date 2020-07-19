@@ -1,0 +1,18 @@
+<meta charset="utf-8">
+<script>
+
+    var n = 0;
+    do {
+        if ((Math.random() * 6) < 1) {
+            alert('Выстрел');
+            break;
+        }
+
+        n++;
+    } while (prompt('еще - играем дальше, нет - заканчиваем.') == 'еще');
+
+    alert('Раундов сыграно: ' + n);
+
+    alert('Скатертью дорожка!');
+
+</script>
