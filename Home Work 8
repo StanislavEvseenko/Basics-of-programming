@@ -1,0 +1,16 @@
+<meta charset="utf-8">
+<script>
+    var a = 15;
+    var b = 35;
+    var c = 45;
+    var d = 65;
+
+    var n = prompt('Напиши любое число:')
+    if (isNaN(n)) {
+        alert('Ты написал не число!');
+    } else if (((n > a) && (n < b)) || ((n > c) && (n < d))) {
+        alert('Попал!');
+    } else {
+        alert('Мимо!');
+    }
+</script>
