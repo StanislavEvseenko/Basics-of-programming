@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+<script>
+
+    var a = parseInt(prompt('Сумма вклада:'));
+    var b = parseInt(prompt('Процентная ставка:'));
+    var c = parseInt(prompt('Срок вклада:'));
+    var d = ' год ';
+
+    for (var n = 1; n <= c; n++) {
+
+        a = a + ((a / 100) * b);
+
+        alert('Сумма вклада через ' + n + d + 'составит: ' + a);
+
+        if ((n < 4) && (n >= 1)) {
+            d = ' года ';
+        } else {
+            d = ' лет ';
+        };
+    }
+
+</script>
