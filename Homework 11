@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+<script>
+    var array = [];
+    var rounds = 1000000;
+    var red = 0;
+    var redmax = 0;
+    var i = 0;
+
+    for (i = 0; i <= rounds; i++) {
+        array.push(Math.round(Math.random() * 2));
+    }
+
+    alert(array);
+
+    for (i = 0; i < array.length; i++) {
+        if (array[i] == 1) {
+            red++;
+        } else {
+            if (red > redmax) {
+                redmax = red;
+            }
+            red = 0;
+        }
+    }
+
+    alert(redmax);
+</script>
