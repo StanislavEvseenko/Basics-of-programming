@@ -12,13 +12,9 @@
 
     function getSum(arr) {
         var sum = 0;
-        var J = 10;
-        var Q = 10;
-        var K = 10;
-        var A = 11;
 
         for (i = 0; i < arr.length; i++) {
-            if (arr[i] == 'J' || arr[i] == 'Q' || arr[i] == 'K') {
+            if ((arr[i] == 'J') || (arr[i] == 'Q') || (arr[i] == 'K')) {
                 arr[i] = 10;
             } else if (arr[i] == 'A') {
                 arr[i] = 11;
